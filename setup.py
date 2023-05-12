@@ -5,7 +5,7 @@ base_path = Path(__file__).parent
 long_description = (base_path / "README.md").read_text()
 
 setuptools.setup(
-  name="openplayground-api",
+  name="openplayground",
   version="0.1.1",
   author="ading2210",
   license="GPLv3",
@@ -19,8 +19,7 @@ setuptools.setup(
     "Operating System :: OS Independent"
   ],
   python_requires=">=3.6",
-  py_modules=["openplayground"],
-  package_dir={"": "openplayground-api/src"},
+  package_dir=setuptools.find_packages(include=['openplayground']),
   install_requires=[
     "pycryptodome"
   ],
