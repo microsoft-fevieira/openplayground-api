@@ -12,7 +12,6 @@ setuptools.setup(
   description=" A reverse engineered API wrapper for OpenPlayground (nat.dev)",
   long_description=long_description,
   long_description_content_type="text/markdown",
-  packages=setuptools.find_packages(),
   classifiers=[
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: GNU General Public License (GPL)",
