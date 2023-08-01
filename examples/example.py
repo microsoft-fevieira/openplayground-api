@@ -25,8 +25,8 @@ client = openplayground.Client(token, email=email)
 prompt = "Summarize the GNU GPL v3."
 
 message = []
-for chunk in client.generate("openai:gpt-3.5-turbo", prompt, maximum_length=1000):
-  if chunk["event"] == "infer":
-    message.append(chunk["message"])
+for chunk in client.generate("forefront:pythia-20b", prompt, maximum_length=1000):
+  if chunk["event"] == "completion":
+    message.append(chunk["token"])
 
 print(''.join(message))
